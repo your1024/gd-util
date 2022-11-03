@@ -4,7 +4,7 @@
     "type": "library",
     "require": {
         "php": "7.*",
-        "ext-gd": "7.*"
+        "ext-gd": "*"
     },
     "require-dev": {
     },
