@@ -1,0 +1,34 @@
+{
+    "name": "yhy/gd-util",
+    "description": "gd tool",
+    "type": "library",
+    "require": {
+        "php": "7.*",
+        "ext-gd": "7.*"
+    },
+    "require-dev": {
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Yhy\\GdUtil\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "aliases": {
+                "Str": "Yhy\\GdUtil\\Facades\\Str",
+                "Gd2": "Yhy\\GdUtil\\Facades\\Gd2"
+            },
+            "providers": [
+                "Yhy\\GdUtil\\Providers\\Gd2ServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "yhy",
+            "email": "karl-yang@foxmail.com"
+        }
+    ]
+}
